@@ -1,1 +1,11 @@
 # booster
+1. halfrost
+2. gvanrossum
+3. mdo
+4. fengdu78
+5. ageron
+6. dmalan
+7. codingforentrepreneurs
+8. brianyu28
+9. lucidrains
+10. JacksonTian

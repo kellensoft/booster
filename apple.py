@@ -40,7 +40,7 @@ def get_jwt_token():
         "iss": issuer,
         "exp": datetime.datetime.now(datetime.UTC) + datetime.timedelta(hours=1),
     }
-    return jwt.encode(payload, secret, algorithm=alg).decode('utf-8')
+    return jwt.encode(payload, secret, algorithm=alg)
 
 def generate_png(username, number, count):
     jwt_token = get_jwt_token()
@@ -93,7 +93,7 @@ while len(random_users) < 10:
     for username in list(available):
         if len(random_users) >= 10:
             break
-        number = len(random_users) + 1
+        number = len(existing_names) + 1
         if try_generate_png(username, number, count, retries=2):
             count+=1
             random_users.append(username)
